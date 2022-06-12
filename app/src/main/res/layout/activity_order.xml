@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:text="@string/finish_your_order"
+      android:textSize="30sp" />
+
+  <ImageView
+      android:id="@+id/burgerView"
+      android:layout_width="144dp"
+      android:layout_height="96dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="80dp"
+      android:contentDescription="@string/meal"
+      app:layout_constraintVertical_bias="1.0"
+      android:src="@drawable/burger" />
+
+
+  <ImageView
+      android:id="@+id/drinkView"
+      android:layout_width="144dp"
+      android:layout_height="96dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginTop="200dp"
+      android:src="@drawable/cola"
+      app:layout_constraintVertical_bias="1.0"
+      android:contentDescription="@string/drinks" />
+
+  <TextView
+      android:id="@+id/coke"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/drinkView"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="200dp"
+      android:textSize="20sp"
+      android:text="@string/cocacola" />
+
+  <TextView
+      android:id="@+id/txtQuanCoke"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/drinkView"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="230dp"
+      android:textSize="15sp"
+      android:text="@string/quantity" />
+
+  <TextView
+      android:id="@+id/quantityCoke"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/txtQuanCoke"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="230dp"
+      android:textSize="15sp"
+      android:text="@string/_1" />
+
+  <TextView
+      android:id="@+id/txtPriceCoke"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/drinkView"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="260dp"
+      android:textSize="15sp"
+      android:text="@string/price" />
+
+  <TextView
+      android:id="@+id/priceCoke"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/txtPriceCoke"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="260dp"
+      android:textSize="15sp"
+      android:text="@string/_4_99" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="80dp"
+      android:layout_toEndOf="@id/burgerView"
+      android:text="@string/classic_burger"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/txtQuan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/burgerView"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="120dp"
+      android:textSize="15sp"
+      android:text="@string/quantity" />
+
+  <TextView
+      android:id="@+id/quantity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/txtQuan"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="120dp"
+      android:textSize="15sp"
+      android:text="@string/_1" />
+
+  <TextView
+      android:id="@+id/txtPrice"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/burgerView"
+      android:layout_marginStart="25dp"
+      android:layout_marginTop="150dp"
+      android:textSize="15sp"
+      android:text="@string/price" />
+
+  <TextView
+      android:id="@+id/price"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@id/txtPrice"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="150dp"
+      android:textSize="15sp"
+      android:text="29.99" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="320dp"
+      android:text="@string/total"
+      android:textSize="25sp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="350dp"
+      android:text="34.98"
+      android:textSize="30sp" />
+
+
+  <TextView
+      android:id="@+id/txtName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="410dp"
+      android:text="@string/name"
+      android:textSize="20sp" />
+
+
+  <EditText
+      android:id="@+id/edtName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="380dp"
+      android:layout_toEndOf="@id/txtName"
+      android:autofillHints="name"
+      android:ems="10"
+      android:hint="@string/full_name"
+      android:inputType="textPersonName"
+      android:textSize="20sp" />
+
+
+  <TextView
+      android:id="@+id/txtAddress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="450dp"
+      android:text="@string/address"
+      android:textSize="20sp" />
+
+
+  <EditText
+      android:id="@+id/edtAddress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="440dp"
+      android:layout_toEndOf="@id/txtAddress"
+      android:autofillHints="address"
+      android:ems="10"
+      android:hint="@string/edtaddress"
+      android:inputType="textPersonName"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/txtPhone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="510dp"
+      android:text="@string/phone"
+      android:textSize="20sp" />
+
+
+  <EditText
+      android:id="@+id/edtPhone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="500dp"
+      android:layout_toEndOf="@id/txtPhone"
+      android:autofillHints="phone"
+      android:ems="10"
+      android:hint="@string/phone_number"
+      android:inputType="textPersonName"
+      android:textSize="20sp"
+      tools:ignore="TextFields" />
+
+  <Button
+      android:id="@+id/btnOrder"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="560dp"
+      android:text="@string/order_now"
+      android:textSize="30sp" />
+
+  <Button
+      android:id="@+id/btnComment"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/btnOrder"
+      android:layout_centerHorizontal="true"
+      android:text="@string/have_a_comment"
+      android:textSize="15sp" />
+
+
+
+
+</RelativeLayout>

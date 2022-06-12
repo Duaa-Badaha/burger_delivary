@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".commentActivity">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Leave A Comment!"
+      android:layout_marginTop="50dp"
+      android:layout_centerHorizontal="true"
+      android:textSize="30sp" />
+
+  <TextView
+      android:id="@+id/txtName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="120dp"
+      android:layout_centerHorizontal="true"
+      android:text="Your Name: "
+      android:textSize="20sp" />
+
+  <EditText
+      android:id="@+id/edtNameCom"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/txtName"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:autofillHints="Name"
+      android:ems="10"
+      android:hint="Name"
+      android:inputType="textPersonName"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/txtComment"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="250dp"
+      android:text="Your Comment: "
+      android:textSize="20sp" />
+
+  <EditText
+      android:id="@+id/edtComment"
+      android:layout_width="wrap_content"
+      android:layout_height="250dp"
+      android:layout_below="@id/txtComment"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:autofillHints="Comment"
+      android:ems="10"
+      android:hint="Comment"
+      android:inputType="textCapWords"
+      android:textSize="20sp" />
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/edtComment"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:textSize="30sp"
+      android:text="Send" />
+
+
+</RelativeLayout>
